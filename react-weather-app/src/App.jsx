@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="App">
            <Router>
             <Routes>
                       <Route path="/" element={<CityList cities={weatherData}/>} />

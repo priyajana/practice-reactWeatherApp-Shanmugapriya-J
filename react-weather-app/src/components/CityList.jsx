@@ -8,10 +8,10 @@ export default function CityList({cities}){
  
    
     return(
-        <div>
+        <div className="citylist">
             {Object.keys(cities).map((keyName,keyIndex)=>(
                 <ul key={keyIndex}>
-                    <li key={keyIndex}>
+                    <li style={{listStyle:'none'}} key={keyIndex}>
                         <Link key={keyIndex} to = {`/forecast/${keyName}`}>
 
                             {keyName}
